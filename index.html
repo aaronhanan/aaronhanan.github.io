@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Margin Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/amplitudejs/5.3.2/amplitude.min.js"
+      integrity="sha512-Q/0FAciD7lgeXgWUoL6/GuhRxRLP7KaAEag7TjKyx5hGXKsQc7Sf6dAL2Fg62Od8oXUYgyKNIBbwA2SwNSQi+A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              quicksand: ["Quicksand", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+            colors: {
+              "is-orange": "#FF5721",
+              "is-gray": "#333333",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator"></div>
+    <script type="text/babel" src="marginCalculator.js"></script>
+  </body>
+</html>
